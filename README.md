@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+## 成為初級資料分析師 | Python 機器學習
 
-You can use the [editor on GitHub](https://github.com/yaojenkuo/pyml-101/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### 簡介
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在[台灣大學資訊工程學系資訊系統訓練班](https://www.csie.ntu.edu.tw/train/)所開設的 Python 機器學習課程網頁，課程時數 30 小時。
 
-### Markdown
+### 評分標準
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- 70 分即可獲得證書，作業請上傳至 Google 表單
+- 作業繳交期限為課程結束後一週內，如遇長假期（春節、連假）則順延
 
-```markdown
-Syntax highlighted code block
+### 作業上傳表單
 
-# Header 1
-## Header 2
-### Header 3
+- [318 期假日下午班]()
 
-- Bulleted
-- List
+### 課程互動頻道
 
-1. Numbered
-2. List
+<https://www.sli.do>
 
-**Bold** and _Italic_ and `Code` text
+### 課程 Facebook 群組
 
-[Link](url) and ![Image](src)
-```
+<https://www.facebook.com/groups/ntucsietrainpyds/>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 課程共筆
 
-### Jekyll Themes
+- [318 期假日下午班]()
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yaojenkuo/pyml-101/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 課程大綱
 
-### Support or Contact
+- [關於](00-about.slides.html)
+- 機器學習
+    - [起步走](01-getting-started.slides.html)
+    - [簡介](02-intro.slides.html)
+    - [Scikit-Learn 101](03-sklearn-101.slides.html)
+    - 迴歸
+    - 梯度遞減
+    - 分類
+- 神經網路與深度學習
+    - 簡介
+    - TensorFlow 101
+    - 全連接神經網絡
+    - 卷積神經網絡
+    - 遞歸神經網路
+    - 長短期記憶模型
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 近期課程錄影清單
+
+- [第 318 期 Python 機器學習（假日班下午）]()
