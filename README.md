@@ -23,7 +23,7 @@
 
 ### 課程共筆
 
-- [318 期假日下午班]()
+- [318 期假日下午班](https://colab.research.google.com/drive/16jLjtaPbQN8xKrg3HEb2o8wxGBhsoYRG)
 
 ### 課程大綱
 
