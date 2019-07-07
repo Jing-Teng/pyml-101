@@ -11,7 +11,7 @@
 
 ### 作業上傳表單
 
-- [318 期假日下午班]()
+- 318 期假日下午班
 
 ### 課程互動頻道
 
@@ -45,4 +45,4 @@
 
 ### 近期課程錄影清單
 
-- [第 318 期 Python 機器學習（假日班下午）]()
+- [第 318 期 Python 機器學習（假日班下午）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUbjWcKQOKhho7CpxkvaMVu)
