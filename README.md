@@ -35,7 +35,7 @@ Contact me: <tony@kyosei.ai>
     - [簡介](02-intro.slides.html)
     - [Scikit-Learn 101](03-sklearn-101.slides.html)
     - [迴歸](04-regression.slides.html)
-    - 梯度遞減
+    - [梯度遞減](05-gradient-descent.slides.html)
     - 分類
 - 神經網路與深度學習
     - 簡介
