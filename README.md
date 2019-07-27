@@ -13,7 +13,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 作業上傳表單
 
-- 318 期假日下午班
+- [318 期假日下午班](https://forms.gle/RgdLpNuje9PUuoff9)
 
 ### 課程互動頻道
 
@@ -36,7 +36,7 @@ Contact me: <tony@kyosei.ai>
     - [Scikit-Learn 101](03-sklearn-101.slides.html)
     - [迴歸](04-regression.slides.html)
     - [梯度遞減](05-gradient-descent.slides.html)
-    - 分類
+    - [分類](06-classification.slides.html)
 - 神經網路與深度學習
     - 簡介
     - TensorFlow 101
