@@ -13,7 +13,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 作業上傳表單
 
-- [318 期假日下午班](https://forms.gle/RgdLpNuje9PUuoff9)
+- [318 期假日下午班](https://forms.gle/TfqassRizDnH2mCG9)
 
 ### 課程互動頻道
 
