@@ -14216,7 +14216,77 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20998;&#39006;&#27169;&#22411;&#30340;-E,-T,-&#33287;-P">&#20998;&#39006;&#27169;&#22411;&#30340; E, T, &#33287; P<a class="anchor-link" href="#&#20998;&#39006;&#27169;&#22411;&#30340;-E,-T,-&#33287;-P">&#182;</a></h2><blockquote><p>A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E.</p>
+<p>Tom Mitchel</p>
+</blockquote>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="E:-Experience">E: Experience<a class="anchor-link" href="#E:-Experience">&#182;</a></h2><p>NBA 球員的身高</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="T:-Task">T: Task<a class="anchor-link" href="#T:-Task">&#182;</a></h2><p>依據一名球員的身高預測他在球場上的位置</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.98</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># 一位身高 198 cm 的球員</span>
+<span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.83</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># 一位身高 183 cm 的球員</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="P:-Performance">P: Performance<a class="anchor-link" href="#P:-Performance">&#182;</a></h2><ul>
+<li>跟 $f$ 長得很像的 $h$，分類與後來在球場上的位置相同</li>
+<li>跟 $f$ 長得不太像的 $h$，分類與後來在球場上的位置不相同</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20998;&#39006;&#27169;&#22411;-in-short">&#20998;&#39006;&#27169;&#22411; in short<a class="anchor-link" href="#&#20998;&#39006;&#27169;&#22411;-in-short">&#182;</a></h2><p>建立一個輸入向量 $x$ 能夠得到純量 $\hat{y}$ 輸入的系統 $h$，其中向量 $w$ 稱為是系統的參數、$\hat{y}$ 則是一個離散值，經由某個 $\sigma$ 函數將 $h$ 轉換而得</p>
+$$
+\hat{y} = \sigma (h(x)) = \sigma (w^Tx)
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;&#35492;&#20998;&#39006;&#25976;&#35413;&#20272;-$h$-&#36319;-$f$-&#30340;&#30456;&#20284;&#31243;&#24230;">&#20351;&#29992;&#35492;&#20998;&#39006;&#25976;&#35413;&#20272; $h$ &#36319; $f$ &#30340;&#30456;&#20284;&#31243;&#24230;<a class="anchor-link" href="#&#20351;&#29992;&#35492;&#20998;&#39006;&#25976;&#35413;&#20272;-$h$-&#36319;-$f$-&#30340;&#30456;&#20284;&#31243;&#24230;">&#182;</a></h2>$$J(h)_{test} = \sum^{n_{test}}\delta (\hat{y} \neq y_{test})$$
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
