@@ -13329,7 +13329,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -13340,59 +13340,6 @@ a.anchor-link {
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-2-7516533d3988&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> X_train<span class="ansi-blue-fg">,</span> X_validation<span class="ansi-blue-fg">,</span> y_train<span class="ansi-blue-fg">,</span> y_validation <span class="ansi-blue-fg">=</span> train_test_split<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">,</span> test_size<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.33</span><span class="ansi-blue-fg">,</span> random_state<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">42</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> lr <span class="ansi-blue-fg">=</span> LogisticRegression<span class="ansi-blue-fg">(</span>solver<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;lbfgs&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>lr<span class="ansi-blue-fg">.</span>fit<span class="ansi-blue-fg">(</span>X_train<span class="ansi-blue-fg">,</span> y_train<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py</span> in <span class="ansi-cyan-fg">fit</span><span class="ansi-blue-fg">(self, X, y, sample_weight)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1283</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1284</span>         X, y = check_X_y(X, y, accept_sparse=&#39;csr&#39;, dtype=_dtype, order=&#34;C&#34;,
-<span class="ansi-green-fg">-&gt; 1285</span><span class="ansi-red-fg">                          accept_large_sparse=solver != &#39;liblinear&#39;)
-</span><span class="ansi-green-intense-fg ansi-bold">   1286</span>         check_classification_targets<span class="ansi-blue-fg">(</span>y<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1287</span>         self<span class="ansi-blue-fg">.</span>classes_ <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>unique<span class="ansi-blue-fg">(</span>y<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py</span> in <span class="ansi-cyan-fg">check_X_y</span><span class="ansi-blue-fg">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, warn_on_dtype, estimator)</span>
-<span class="ansi-green-intense-fg ansi-bold">    754</span>                     ensure_min_features<span class="ansi-blue-fg">=</span>ensure_min_features<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    755</span>                     warn_on_dtype<span class="ansi-blue-fg">=</span>warn_on_dtype<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 756</span><span class="ansi-red-fg">                     estimator=estimator)
-</span><span class="ansi-green-intense-fg ansi-bold">    757</span>     <span class="ansi-green-fg">if</span> multi_output<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    758</span>         y = check_array(y, &#39;csr&#39;, force_all_finite=True, ensure_2d=False,
-
-<span class="ansi-green-fg">~/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py</span> in <span class="ansi-cyan-fg">check_array</span><span class="ansi-blue-fg">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, warn_on_dtype, estimator)</span>
-<span class="ansi-green-intense-fg ansi-bold">    571</span>         <span class="ansi-green-fg">if</span> force_all_finite<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    572</span>             _assert_all_finite(array,
-<span class="ansi-green-fg">--&gt; 573</span><span class="ansi-red-fg">                                allow_nan=force_all_finite == &#39;allow-nan&#39;)
-</span><span class="ansi-green-intense-fg ansi-bold">    574</span> 
-<span class="ansi-green-intense-fg ansi-bold">    575</span>     shape_repr <span class="ansi-blue-fg">=</span> _shape_repr<span class="ansi-blue-fg">(</span>array<span class="ansi-blue-fg">.</span>shape<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py</span> in <span class="ansi-cyan-fg">_assert_all_finite</span><span class="ansi-blue-fg">(X, allow_nan)</span>
-<span class="ansi-green-intense-fg ansi-bold">     54</span>                 not allow_nan and not np.isfinite(X).all()):
-<span class="ansi-green-intense-fg ansi-bold">     55</span>             type_err <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;infinity&#39;</span> <span class="ansi-green-fg">if</span> allow_nan <span class="ansi-green-fg">else</span> <span class="ansi-blue-fg">&#39;NaN, infinity&#39;</span>
-<span class="ansi-green-fg">---&gt; 56</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> ValueError<span class="ansi-blue-fg">(</span>msg_err<span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>type_err<span class="ansi-blue-fg">,</span> X<span class="ansi-blue-fg">.</span>dtype<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     57</span> 
-<span class="ansi-green-intense-fg ansi-bold">     58</span> 
-
-<span class="ansi-red-fg">ValueError</span>: Input contains NaN, infinity or a value too large for dtype(&#39;float64&#39;).</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13488,7 +13435,8 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">X_imputed_by_mean</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13509,8 +13457,10 @@ a.anchor-link {
 
 
 
-<div class="output_text output_subarea ">
-<pre>&lt;Figure size 640x480 with 1 Axes&gt;</pre>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
 </div>
 
 </div>
@@ -13924,14 +13874,14 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[0 1 0 1 0 0 1 0 0 0 1 1 1 1 0 1 0 0 1 0 0 0 0 1 0 0 0 1 0 1 1 1 0 0 1 0 1
- 1 0 0 1 1 0 0 0 1 0 1 1 0 0 0 1 1 0 1 0 1 1 1 1 0 1 0 1 1 1 1 1 1 0 0 1 1
- 1 0 0 0 1 0 1 1 1 1 0 1 0 1 1 1 1 0 0 0 0 1 0 1 1 1 0 1 0 0 0 1 1 1 0 1 1
- 1 1 1 0 1 1 0 1 0 1 1 1 1 1 1 1 1 0 1 0 0 0 0 1 1 0 0 1 0 1 0 1 0 1 0 0 0
- 1 0 0 1 1 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 1 0 0 1 0 0 1 1 1 1 0 1 1 1 1 1 1
- 0 1 1 0 0 0 1 0 1 0 1 0 1 1 0 1 1 0 1 1 0 0 1 1 1 1 0 0 0 1 1 1 0 1 1 0 1
- 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 0 0 0 1 0 0 1 0 0 1 1 1 1 1 0 0
- 0 0 0 0 0 0 1 0 0 1 1 1 1 0 0 1 1 0 1 1 1 0 0 0 1 0 0 1 0 1 1 0 0 0 1 0]
+<pre>[0 1 1 0 0 1 0 0 0 1 0 1 1 1 0 0 0 0 1 1 0 1 1 0 1 1 0 1 0 1 1 1 1 1 1 0 1
+ 1 1 1 1 0 1 1 1 1 0 0 1 1 1 0 1 1 1 0 0 0 1 0 0 0 1 1 1 0 1 0 1 1 0 0 1 0
+ 0 1 1 1 1 0 1 1 0 1 1 1 0 0 0 1 0 0 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 1 1 1 1
+ 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 1 0 1 0 0 0 1 1 0 1 1 1 1 1 0 1 1 0 0
+ 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 0 0 0 1 1 1 1 1 0 0 1 0 0 1 0 1
+ 1 0 0 1 0 1 1 1 1 1 0 1 0 0 0 1 1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1 1 0 1 1
+ 0 1 1 0 1 0 0 1 0 0 0 0 0 1 1 0 0 0 1 0 1 0 1 0 1 0 1 1 1 1 0 1 1 1 1 0 1
+ 0 1 1 1 0 1 0 1 1 0 0 1 1 1 1 1 1 1 1 0 1 0 1 0 1 0 0 1 1 0 0 1 0 0 0 1]
 </pre>
 </div>
 </div>
@@ -13973,7 +13923,7 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy score: 50.51%
+<pre>Accuracy score: 44.41%
 </pre>
 </div>
 </div>
@@ -14041,7 +13991,7 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy score: 53.95%
+<pre>Accuracy score: 56.58%
 </pre>
 </div>
 </div>
@@ -14245,7 +14195,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14273,9 +14223,10 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20998;&#39006;&#27169;&#22411;-in-short">&#20998;&#39006;&#27169;&#22411; in short<a class="anchor-link" href="#&#20998;&#39006;&#27169;&#22411;-in-short">&#182;</a></h2><p>建立一個輸入向量 $x$ 能夠得到純量 $\hat{y}$ 輸入的系統 $h$，其中向量 $w$ 稱為是系統的參數、$\hat{y}$ 則是一個離散值，經由某個 $\sigma$ 函數將 $h$ 轉換而得</p>
+<h2 id="&#20998;&#39006;&#27169;&#22411;-in-short">&#20998;&#39006;&#27169;&#22411; in short<a class="anchor-link" href="#&#20998;&#39006;&#27169;&#22411;-in-short">&#182;</a></h2><p>建立一個輸入向量 $x$ 能夠得到純量 $\hat{y}$ 輸入的系統 $h$，其中向量 $w$ 稱為是系統的參數、$\hat{y}$ 則是一個離散值，經由某些函數（$f$）將 $h$ 轉換而得</p>
 $$
-\hat{y} = \sigma (h(x)) = \sigma (w^Tx)
+\hat{y} = f(h(x)) = f(w^Tx) \\
+\hat{y} = f(h(X)) = f(Xw) \\
 $$
 </div>
 </div>
@@ -14290,12 +14241,799 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#65288;Naive-Bayes-Classifier&#65289;">&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#65288;Naive Bayes Classifier&#65289;<a class="anchor-link" href="#&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#65288;Naive-Bayes-Classifier&#65289;">&#182;</a></h2><blockquote><p>TBD</p>
-</blockquote>
+<h2 id="&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#65288;Naive-Bayes-Classifier&#65289;">&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#65288;Naive Bayes Classifier&#65289;<a class="anchor-link" href="#&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#65288;Naive-Bayes-Classifier&#65289;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#22914;&#20309;&#24478;&#36899;&#32396;&#22411;&#30340;&#36664;&#20986;-$Xw$-&#21040;&#38626;&#25955;&#22411;&#30340;&#36664;&#20986;-$\hat{y}$">&#22914;&#20309;&#24478;&#36899;&#32396;&#22411;&#30340;&#36664;&#20986; $Xw$ &#21040;&#38626;&#25955;&#22411;&#30340;&#36664;&#20986; $\hat{y}$<a class="anchor-link" href="#&#22914;&#20309;&#24478;&#36899;&#32396;&#22411;&#30340;&#36664;&#20986;-$Xw$-&#21040;&#38626;&#25955;&#22411;&#30340;&#36664;&#20986;-$\hat{y}$">&#182;</a></h2>$$
+\hat{y} = f(h(X)) = H(\sigma(Xw))
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20854;&#20013;-$\sigma$-&#20439;&#31281;&#28858;&#28608;&#21237;&#20989;&#25976;&#65288;Activation-function&#65289;&#65292;$H$-&#31281;&#28858;&#38542;&#36493;&#20989;&#25976;&#65288;Step-function&#65289;">&#20854;&#20013; $\sigma$ &#20439;&#31281;&#28858;&#28608;&#21237;&#20989;&#25976;&#65288;Activation function&#65289;&#65292;$H$ &#31281;&#28858;&#38542;&#36493;&#20989;&#25976;&#65288;Step function&#65289;<a class="anchor-link" href="#&#20854;&#20013;-$\sigma$-&#20439;&#31281;&#28858;&#28608;&#21237;&#20989;&#25976;&#65288;Activation-function&#65289;&#65292;$H$-&#31281;&#28858;&#38542;&#36493;&#20989;&#25976;&#65288;Step-function&#65289;">&#182;</a></h2><ul>
+<li>激勵函數將連續型輸出轉換為機率</li>
+<li>階躍函數將機率輸出轉換為離散值</li>
+</ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20998;&#39006;&#22120;&#30340;&#36664;&#20986;&#20134;&#21487;&#20197;&#27231;&#29575;&#34920;&#31034;&#65306;&#32102;&#23450;-$x$-&#20854;&#39006;&#21029;&#28858;-$C_i$-&#30340;&#27231;&#29575;&#28858;&#20309;">&#20998;&#39006;&#22120;&#30340;&#36664;&#20986;&#20134;&#21487;&#20197;&#27231;&#29575;&#34920;&#31034;&#65306;&#32102;&#23450; $x$ &#20854;&#39006;&#21029;&#28858; $C_i$ &#30340;&#27231;&#29575;&#28858;&#20309;<a class="anchor-link" href="#&#20998;&#39006;&#22120;&#30340;&#36664;&#20986;&#20134;&#21487;&#20197;&#27231;&#29575;&#34920;&#31034;&#65306;&#32102;&#23450;-$x$-&#20854;&#39006;&#21029;&#28858;-$C_i$-&#30340;&#27231;&#29575;&#28858;&#20309;">&#182;</a></h2>$$
+\sigma(x^Tw) = P(C_i | x)
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#35069;&#20316;&#19968;&#21103;&#25778;&#20811;&#29260;">&#38568;&#22530;&#32244;&#32722;&#65306;&#35069;&#20316;&#19968;&#21103;&#25778;&#20811;&#29260;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#35069;&#20316;&#19968;&#21103;&#25778;&#20811;&#29260;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">suits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Spade&quot;</span><span class="p">,</span> <span class="s2">&quot;Heart&quot;</span><span class="p">,</span> <span class="s2">&quot;Diamond&quot;</span><span class="p">,</span> <span class="s2">&quot;Club&quot;</span><span class="p">]</span>
+<span class="n">ranks</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;Jack&quot;</span><span class="p">,</span> <span class="s2">&quot;Queen&quot;</span><span class="p">,</span> <span class="s2">&quot;King&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cards</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Spade 1&#39;, &#39;Spade 2&#39;, &#39;Spade 3&#39;, &#39;Spade 4&#39;, &#39;Spade 5&#39;, &#39;Spade 6&#39;, &#39;Spade 7&#39;, &#39;Spade 8&#39;, &#39;Spade 9&#39;, &#39;Spade 10&#39;, &#39;Spade Jack&#39;, &#39;Spade Queen&#39;, &#39;Spade King&#39;, &#39;Heart 1&#39;, &#39;Heart 2&#39;, &#39;Heart 3&#39;, &#39;Heart 4&#39;, &#39;Heart 5&#39;, &#39;Heart 6&#39;, &#39;Heart 7&#39;, &#39;Heart 8&#39;, &#39;Heart 9&#39;, &#39;Heart 10&#39;, &#39;Heart Jack&#39;, &#39;Heart Queen&#39;, &#39;Heart King&#39;, &#39;Diamond 1&#39;, &#39;Diamond 2&#39;, &#39;Diamond 3&#39;, &#39;Diamond 4&#39;, &#39;Diamond 5&#39;, &#39;Diamond 6&#39;, &#39;Diamond 7&#39;, &#39;Diamond 8&#39;, &#39;Diamond 9&#39;, &#39;Diamond 10&#39;, &#39;Diamond Jack&#39;, &#39;Diamond Queen&#39;, &#39;Diamond King&#39;, &#39;Club 1&#39;, &#39;Club 2&#39;, &#39;Club 3&#39;, &#39;Club 4&#39;, &#39;Club 5&#39;, &#39;Club 6&#39;, &#39;Club 7&#39;, &#39;Club 8&#39;, &#39;Club 9&#39;, &#39;Club 10&#39;, &#39;Club Jack&#39;, &#39;Club Queen&#39;, &#39;Club King&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29694;&#22312;&#26377;&#19968;&#24373;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#23427;&#26159;-Jack&#12289;Queen-&#25110;-King-&#30340;&#27231;&#29575;&#26159;&#22810;&#23569;&#65311;">&#29694;&#22312;&#26377;&#19968;&#24373;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#23427;&#26159; Jack&#12289;Queen &#25110; King &#30340;&#27231;&#29575;&#26159;&#22810;&#23569;&#65311;<a class="anchor-link" href="#&#29694;&#22312;&#26377;&#19968;&#24373;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#23427;&#26159;-Jack&#12289;Queen-&#25110;-King-&#30340;&#27231;&#29575;&#26159;&#22810;&#23569;&#65311;">&#182;</a></h2>$$
+P(Face) = \frac{12}{52}
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#29694;&#22312;&#26377;-52-&#24373;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#35531;&#20197;-1-&#20195;&#34920;-Jack&#12289;Queen-&#25110;-King&#65307;&#20197;-0-&#20195;&#34920;&#20854;&#20182;&#25778;&#20811;&#29260;&#23565;&#36889;-52-&#24373;&#29260;&#36914;&#34892;&#20108;&#20803;&#20998;&#39006;">&#38568;&#22530;&#32244;&#32722;&#65306;&#29694;&#22312;&#26377; 52 &#24373;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#35531;&#20197; 1 &#20195;&#34920; Jack&#12289;Queen &#25110; King&#65307;&#20197; 0 &#20195;&#34920;&#20854;&#20182;&#25778;&#20811;&#29260;&#23565;&#36889; 52 &#24373;&#29260;&#36914;&#34892;&#20108;&#20803;&#20998;&#39006;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#29694;&#22312;&#26377;-52-&#24373;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#35531;&#20197;-1-&#20195;&#34920;-Jack&#12289;Queen-&#25110;-King&#65307;&#20197;-0-&#20195;&#34920;&#20854;&#20182;&#25778;&#20811;&#29260;&#23565;&#36889;-52-&#24373;&#29260;&#36914;&#34892;&#20108;&#20803;&#20998;&#39006;">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 0
+ 0 1 0 0 0 1 1 1 0 0 0 0 1 0 0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">card_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[32]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>card</th>
+      <th>y_true</th>
+      <th>y_pred</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>19</th>
+      <td>Heart 7</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Club 3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Club 9</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Spade King</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Club 5</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_true</span> <span class="o">=</span> <span class="n">card_df</span><span class="p">[</span><span class="s2">&quot;y_true&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">card_df</span><span class="p">[</span><span class="s2">&quot;y_pred&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">n_tp_tn</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_true</span> <span class="o">==</span> <span class="n">y_pred</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">n_tp_tn</span> <span class="o">/</span> <span class="n">y_true</span><span class="o">.</span><span class="n">size</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy score: </span><span class="si">{:.2f}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">acc</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Accuracy score: 65.38%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20197;&#19978;&#37117;&#36319;&#12300;&#35997;&#27663;&#12301;&#27794;&#26377;&#38364;&#20418;">&#20197;&#19978;&#37117;&#36319;&#12300;&#35997;&#27663;&#12301;&#27794;&#26377;&#38364;&#20418;<a class="anchor-link" href="#&#20197;&#19978;&#37117;&#36319;&#12300;&#35997;&#27663;&#12301;&#27794;&#26377;&#38364;&#20418;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29694;&#22312;&#26377;&#19968;&#24373;&#24050;&#30693;&#26159;-Jack&#12289;Queen-&#25110;-King-&#30340;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#23427;&#26159;-King-&#30340;&#27231;&#29575;&#26159;&#22810;&#23569;&#65311;">&#29694;&#22312;&#26377;&#19968;&#24373;&#24050;&#30693;&#26159; Jack&#12289;Queen &#25110; King &#30340;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#23427;&#26159; King &#30340;&#27231;&#29575;&#26159;&#22810;&#23569;&#65311;<a class="anchor-link" href="#&#29694;&#22312;&#26377;&#19968;&#24373;&#24050;&#30693;&#26159;-Jack&#12289;Queen-&#25110;-King-&#30340;&#25778;&#20811;&#29260;&#35206;&#33995;&#22312;&#26700;&#38754;&#19978;&#65292;&#23427;&#26159;-King-&#30340;&#27231;&#29575;&#26159;&#22810;&#23569;&#65311;">&#182;</a></h2>$$
+P(King|Face) = \frac{4}{12}
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#26681;&#25818;&#35997;&#27663;&#23450;&#29702;&#22238;&#31572;">&#26681;&#25818;&#35997;&#27663;&#23450;&#29702;&#22238;&#31572;<a class="anchor-link" href="#&#26681;&#25818;&#35997;&#27663;&#23450;&#29702;&#22238;&#31572;">&#182;</a></h2>$$
+P(King|Face) = \frac{P(Face|King) \times P(King)}{P(Face)} = \frac{1 \times \frac{4}{52}}{\frac{12}{52}}
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#35997;&#27663;&#23450;&#29702;">&#35997;&#27663;&#23450;&#29702;<a class="anchor-link" href="#&#35997;&#27663;&#23450;&#29702;">&#182;</a></h2>$$
+P(C_i|x) = \frac{P(x|C_i)P(C_i)}{P(x)}
+$$<p>其中 $P(C_i|x)$ 即我們俗稱的後驗機率（Posterior Probability）</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Monty-Hall-Problem">Monty Hall Problem<a class="anchor-link" href="#Monty-Hall-Problem">&#182;</a></h2><blockquote><p>Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?</p>
+</blockquote>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">https://en.wikipedia.org/wiki/Monty_Hall_problem</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://i.imgur.com/ikGTmnw.png?2" alt="Imgur"></p>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">https://en.wikipedia.org/wiki/Monty_Hall_problem</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://i.imgur.com/ZVdb45s.jpg" alt="Imgur"></p>
+<p>Source: <a href="https://www.youtube.com">https://www.youtube.com</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20107;&#20214;&#30340;&#20195;&#34399;">&#20107;&#20214;&#30340;&#20195;&#34399;<a class="anchor-link" href="#&#20107;&#20214;&#30340;&#20195;&#34399;">&#182;</a></h2>$$
+C_i: \text{車子在第 i 扇門} \\
+H_i: \text{主持人開第 i 扇門} \\
+X_i: \text{觀眾選第 i 扇門}
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#35336;&#31639;&#36889;&#20841;&#20491;&#27231;&#29575;&#65292;&#28982;&#24460;&#27770;&#23450;&#26159;&#21542;&#35201;&#24478;-$X_1$-&#26356;&#25563;&#33267;-$X_2$">&#35336;&#31639;&#36889;&#20841;&#20491;&#27231;&#29575;&#65292;&#28982;&#24460;&#27770;&#23450;&#26159;&#21542;&#35201;&#24478; $X_1$ &#26356;&#25563;&#33267; $X_2$<a class="anchor-link" href="#&#35336;&#31639;&#36889;&#20841;&#20491;&#27231;&#29575;&#65292;&#28982;&#24460;&#27770;&#23450;&#26159;&#21542;&#35201;&#24478;-$X_1$-&#26356;&#25563;&#33267;-$X_2$">&#182;</a></h2>$$
+P(C_1|H_3, X_1) = ? \\
+P(C_2|H_3, X_1) = ?
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+P(C_1|H_3, X_1) = \frac{P(C_1, H_3, X_1)}{P(H_3, X_1)} = \frac{P(H_3|C_1, X_1)P(C_1, X_1)}{P(H_3, X_1)} = \frac{\frac{1}{2} \times P(C_1, X_1)}{P(H_3) \times P(X_1)} = \frac{\frac{1}{2} \times P(C_1) \times P(X_1)}{P(H_3) \times 1} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} \\
+P(C_2|H_3, X_1) = \frac{P(C_2, H_3, X_1)}{P(H_3, X_1)} = \frac{P(H_3|C_2, X_1)P(C_2, X_1)}{P(H_3, X_1)} = \frac{1 \times P(C_2, X_1)}{P(H_3) \times P(X_1)} = \frac{1 \times P(C_2) \times P(X_1)}{P(H_3) \times 1} = \frac{\frac{1}{3}}{\frac{1}{2}} = \frac{2}{3}
+$$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#20998;&#39006;&#20056;&#23458;&#30340;&#29983;&#23384;&#33287;&#21542;">&#20351;&#29992;&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#20998;&#39006;&#20056;&#23458;&#30340;&#29983;&#23384;&#33287;&#21542;<a class="anchor-link" href="#&#20351;&#29992;&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#20998;&#39006;&#20056;&#23458;&#30340;&#29983;&#23384;&#33287;&#21542;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">titanic</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://storage.googleapis.com/kaggle_datasets/Titanic-Machine-Learning-from-Disaster/train.csv&quot;</span><span class="p">)</span>
+<span class="n">titanic_subset</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">]]</span>
+<span class="n">titanic_subset</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[34]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;-pd.crosstab()-&#35069;&#20316;-Frequency-Table">&#20351;&#29992; <code>pd.crosstab()</code> &#35069;&#20316; Frequency Table<a class="anchor-link" href="#&#20351;&#29992;-pd.crosstab()-&#35069;&#20316;-Frequency-Table">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">titanic_subset</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">titanic_subset</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">])</span>
+<span class="n">freq_table</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[35]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Pclass</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    <tr>
+      <th>Survived</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>80</td>
+      <td>97</td>
+      <td>372</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>136</td>
+      <td>87</td>
+      <td>119</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#35336;&#31639;&#24460;&#39511;&#27231;&#29575;">&#38568;&#22530;&#32244;&#32722;&#65306;&#35336;&#31639;&#24460;&#39511;&#27231;&#29575;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#35336;&#31639;&#24460;&#39511;&#27231;&#29575;">&#182;</a></h2>$$
+P(Survived | Pclass = 1) = \frac{P(Pclass = 1 | Survived) \times P(Survived)}{P(Pclass = 1)} \\
+P(Survived | Pclass = 2) = \frac{P(Pclass = 2 | Survived) \times P(Survived)}{P(Pclass = 2)} \\
+P(Survived | Pclass = 3) = \frac{P(Pclass = 3 | Survived) \times P(Survived)}{P(Pclass = 3)} \\
+$$
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">p_Survived_Pclass_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p_Survived_Pclass_2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p_Survived_Pclass_3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.24167601945379721
+0.1814888010540184
+0.09302804007488324
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#22914;&#20309;&#25805;&#20316;&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#20358;&#38928;&#28204;&#20056;&#23458;&#30340;&#29983;&#23384;&#33287;&#21542;">&#22914;&#20309;&#25805;&#20316;&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#20358;&#38928;&#28204;&#20056;&#23458;&#30340;&#29983;&#23384;&#33287;&#21542;<a class="anchor-link" href="#&#22914;&#20309;&#25805;&#20316;&#31777;&#21934;&#35997;&#27663;&#20998;&#39006;&#22120;&#20358;&#38928;&#28204;&#20056;&#23458;&#30340;&#29983;&#23384;&#33287;&#21542;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+
+<span class="n">titanic</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://storage.googleapis.com/kaggle_datasets/Titanic-Machine-Learning-from-Disaster/train.csv&quot;</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_validation</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_validation</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.33</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#35069;&#20316;&#35347;&#32244;&#36039;&#26009;&#30340;-Frequency-Table">&#35069;&#20316;&#35347;&#32244;&#36039;&#26009;&#30340; Frequency Table<a class="anchor-link" href="#&#35069;&#20316;&#35347;&#32244;&#36039;&#26009;&#30340;-Frequency-Table">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">train_df</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+<span class="n">train_df</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_train</span>
+<span class="n">freq_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">train_df</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">train_df</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">])</span>
+<span class="n">freq_table</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[39]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Pclass</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    <tr>
+      <th>Survived</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>55</td>
+      <td>64</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>80</td>
+      <td>61</td>
+      <td>81</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;">&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;<a class="anchor-link" href="#&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_passengers</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">p_Pclass_1</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
+<span class="n">p_Pclass_2</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
+<span class="n">p_Pclass_3</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
+<span class="n">p_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
+<span class="n">p_Pclass_1_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">n_passengers</span>
+<span class="n">p_Pclass_2_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">/</span> <span class="n">n_passengers</span>
+<span class="n">p_Pclass_3_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">/</span> <span class="n">n_passengers</span>
+<span class="n">p_Survived_Pclass_1</span> <span class="o">=</span> <span class="n">p_Pclass_1_Survived</span> <span class="o">*</span> <span class="n">p_Survived</span> <span class="o">/</span> <span class="n">p_Pclass_1</span>
+<span class="n">p_Survived_Pclass_2</span> <span class="o">=</span> <span class="n">p_Pclass_2_Survived</span> <span class="o">*</span> <span class="n">p_Survived</span> <span class="o">/</span> <span class="n">p_Pclass_2</span>
+<span class="n">p_Survived_Pclass_3</span> <span class="o">=</span> <span class="n">p_Pclass_3_Survived</span> <span class="o">*</span> <span class="n">p_Survived</span> <span class="o">/</span> <span class="n">p_Pclass_3</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">p_Survived_Pclass_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p_Survived_Pclass_2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p_Survived_Pclass_3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.22073079791200598
+0.18177181208053694
+0.08979506232023012
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#23559;&#24460;&#39511;&#27231;&#29575;&#25033;&#29992;&#33267;-$X_{validation}$&#65292;&#24471;&#21040;-$\hat{y}$">&#38568;&#22530;&#32244;&#32722;&#65306;&#23559;&#24460;&#39511;&#27231;&#29575;&#25033;&#29992;&#33267; $X_{validation}$&#65292;&#24471;&#21040; $\hat{y}$<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#23559;&#24460;&#39511;&#27231;&#29575;&#25033;&#29992;&#33267;-$X_{validation}$&#65292;&#24471;&#21040;-$\hat{y}$">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">get_y_pred</span><span class="p">(</span><span class="n">X_validation</span><span class="p">,</span> <span class="n">p_Survived_Pclass_1</span><span class="p">,</span> <span class="n">p_Survived_Pclass_2</span><span class="p">,</span> <span class="n">p_Survived_Pclass_3</span><span class="p">)</span>
+<span class="n">n_tp_tn</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_pred</span> <span class="o">==</span> <span class="n">y_validation</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">n_validations</span> <span class="o">=</span> <span class="n">y_validation</span><span class="o">.</span><span class="n">size</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">n_tp_tn</span> <span class="o">/</span> <span class="n">n_validations</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy score: </span><span class="si">{:.2f}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">acc</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Accuracy score: 55.25%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
