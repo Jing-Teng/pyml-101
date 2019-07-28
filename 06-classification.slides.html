@@ -14930,33 +14930,10 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;">&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;<a class="anchor-link" href="#&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;">&#182;</a></h2>
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;">&#38568;&#22530;&#32244;&#32722;&#65306;&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#35336;&#31639;&#35347;&#32244;&#36039;&#26009;&#30340;&#24460;&#39511;&#27231;&#29575;">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_passengers</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="n">p_Pclass_1</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
-<span class="n">p_Pclass_2</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
-<span class="n">p_Pclass_3</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
-<span class="n">p_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_passengers</span>
-<span class="n">p_Pclass_1_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">n_passengers</span>
-<span class="n">p_Pclass_2_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">/</span> <span class="n">n_passengers</span>
-<span class="n">p_Pclass_3_Survived</span> <span class="o">=</span> <span class="n">freq_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">/</span> <span class="n">n_passengers</span>
-<span class="n">p_Survived_Pclass_1</span> <span class="o">=</span> <span class="n">p_Pclass_1_Survived</span> <span class="o">*</span> <span class="n">p_Survived</span> <span class="o">/</span> <span class="n">p_Pclass_1</span>
-<span class="n">p_Survived_Pclass_2</span> <span class="o">=</span> <span class="n">p_Pclass_2_Survived</span> <span class="o">*</span> <span class="n">p_Survived</span> <span class="o">/</span> <span class="n">p_Pclass_2</span>
-<span class="n">p_Survived_Pclass_3</span> <span class="o">=</span> <span class="n">p_Pclass_3_Survived</span> <span class="o">*</span> <span class="n">p_Survived</span> <span class="o">/</span> <span class="n">p_Pclass_3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
@@ -14991,7 +14968,7 @@ $$
 </div>
 </div>
 
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
