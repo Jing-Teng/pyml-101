@@ -39,11 +39,9 @@ Contact me: <tony@kyosei.ai>
     - [分類](06-classification.slides.html)
 - 神經網路與深度學習
     - 簡介
+    - 全連接神經網路
     - TensorFlow 101
-    - 全連接神經網絡
-    - 卷積神經網絡
-    - 遞歸神經網路
-    - 長短期記憶模型
+    - 基礎神經網路模型
 
 ### 近期課程錄影清單
 
