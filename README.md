@@ -38,9 +38,8 @@ Contact me: <tony@kyosei.ai>
     - [梯度遞減](05-gradient-descent.slides.html)
     - [分類](06-classification.slides.html)
 - 神經網路與深度學習
-    - 簡介
-    - 全連接神經網路
-    - TensorFlow 101
+    - [深度學習簡介](07-dl-intro.slides.html)
+    - [TensorFlow 101]()
     - 基礎神經網路模型
 
 ### 近期課程錄影清單
