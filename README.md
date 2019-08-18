@@ -39,8 +39,7 @@ Contact me: <tony@kyosei.ai>
     - [分類](06-classification.slides.html)
 - 神經網路與深度學習
     - [深度學習簡介](07-dl-intro.slides.html)
-    - [TensorFlow 101]()
-    - 基礎神經網路模型
+    - [神經網路模型](08-nn.slides.html)
 
 ### 近期課程錄影清單
 
