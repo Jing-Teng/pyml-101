@@ -13,6 +13,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 作業上傳表單
 
+- [317 期暑期密集班](https://forms.gle/ZVfVRTdwN7wFNUGm8)
 - [318 期假日下午班](https://forms.gle/TfqassRizDnH2mCG9)
 
 ### 課程互動頻道
@@ -25,22 +26,22 @@ Contact me: <tony@kyosei.ai>
 
 ### 課程共筆
 
+- [317 期暑期密集班](https://colab.research.google.com/drive/100aS0WO9VMXXBa7v_-n2chK56YaARE3K)
 - [318 期假日下午班](https://colab.research.google.com/drive/16jLjtaPbQN8xKrg3HEb2o8wxGBhsoYRG)
 
 ### 課程大綱
 
 - [關於](00-about.slides.html)
-- 機器學習
-    - [起步走](01-getting-started.slides.html)
-    - [簡介](02-intro.slides.html)
-    - [Scikit-Learn 101](03-sklearn-101.slides.html)
-    - [迴歸](04-regression.slides.html)
-    - [梯度遞減](05-gradient-descent.slides.html)
-    - [分類](06-classification.slides.html)
-- 神經網路與深度學習
-    - [深度學習簡介](07-dl-intro.slides.html)
-    - [神經網路模型](08-nn.slides.html)
+- [起步走](01-getting-started.slides.html)
+- [機器學習簡介](02-intro.slides.html)
+- [Scikit-Learn 101](03-sklearn-101.slides.html)
+- [迴歸](04-regression.slides.html)
+- [梯度遞減](05-gradient-descent.slides.html)
+- [分類](06-classification.slides.html)
+- [深度學習簡介](07-dl-intro.slides.html)
+- [神經網路模型](08-nn.slides.html)
 
 ### 近期課程錄影清單
 
+- [第 317 期 Python 機器學習（暑期密集班]()
 - [第 318 期 Python 機器學習（假日班下午）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUbjWcKQOKhho7CpxkvaMVu)
