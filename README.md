@@ -43,5 +43,5 @@ Contact me: <tony@kyosei.ai>
 
 ### 近期課程錄影清單
 
-- [第 317 期 Python 機器學習（暑期密集班]()
+- [第 317 期 Python 機器學習（暑期密集班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWkWOTr0HsKt8ACbck6HnI0)
 - [第 318 期 Python 機器學習（假日班下午）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUbjWcKQOKhho7CpxkvaMVu)
