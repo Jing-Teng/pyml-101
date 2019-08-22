@@ -13876,8 +13876,8 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#27231;&#22120;&#23416;&#32722;&#30340;&#20219;&#21209;&#65306;&#25214;&#20986;&#19968;&#32068;&#21521;&#37327;-$w$-&#35731;&#35347;&#32244;&#36039;&#26009;&#30340;-$MSE_{train}$-&#26368;&#23567;">&#27231;&#22120;&#23416;&#32722;&#30340;&#20219;&#21209;&#65306;&#25214;&#20986;&#19968;&#32068;&#21521;&#37327; $w$ &#35731;&#35347;&#32244;&#36039;&#26009;&#30340; $MSE_{train}$ &#26368;&#23567;<a class="anchor-link" href="#&#27231;&#22120;&#23416;&#32722;&#30340;&#20219;&#21209;&#65306;&#25214;&#20986;&#19968;&#32068;&#21521;&#37327;-$w$-&#35731;&#35347;&#32244;&#36039;&#26009;&#30340;-$MSE_{train}$-&#26368;&#23567;">&#182;</a></h2>$$\bigtriangledown_w MSE_{train} = 0 \\
-\bigtriangledown_w \frac{1}{m} (\hat{y}^{(train)} - y^{(train)})^2 = 0 \\
-\frac{1}{m} \bigtriangledown_w (X^{(train)}w - y^{(train)})^2 = 0 \\
+\bigtriangledown_w \frac{1}{m}\sum_i(\hat{y}^{(train)} - y^{(train)})_i^2 = 0\\
+\frac{1}{m} \bigtriangledown_w (\hat{y}^{(train)} - y^{(train)})^T(\hat{y}^{(train)} - y^{(train)}) = 0\\
 \bigtriangledown_w (X^{(train)}w - y^{(train)})^T(X^{(train)}w - y^{(train)}) = 0 \\
 \frac{\partial}{\partial w} (w^TX^{(train)T}X^{(train)}w - 2w^TX^{(train)T}y^{(train)} + y^{(train)T}y^{(train)}) = 0 \\
 2X^{(train)T}X^{(train)}w - 2X^{(train)T}y^{(train)} = 0 \\
