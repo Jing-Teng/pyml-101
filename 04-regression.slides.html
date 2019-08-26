@@ -16444,7 +16444,7 @@ Name: pos_recategorized, dtype: int64</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#27491;&#35215;&#21270;&#65288;Regularization&#65289;">&#27491;&#35215;&#21270;&#65288;Regularization&#65289;<a class="anchor-link" href="#&#27491;&#35215;&#21270;&#65288;Regularization&#65289;">&#182;</a></h2><p>如何讓 $h$ 在加入更多高次項、特徵時盡可能保持平滑的方法</p>
 $$MSE_{train} = \frac{1}{m}\sum_i(w^Tx^{train} - y^{(train)})_i^2 + \lambda \sum_{i} w_i^2 \\
-MSE_{train} = X^{(train)}w - y^{(train)})^T(X^{(train)}w - y^{(train)} + \lambda w^Tw
+MSE_{train} = (X^{(train)}w - y^{(train)})^T(X^{(train)}w - y^{(train)}) + \lambda w^Tw
 $$
 </div>
 </div>
@@ -16454,8 +16454,8 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#20855;&#20633;&#27491;&#35215;&#21270;&#30340;-Normal-equations">&#20855;&#20633;&#27491;&#35215;&#21270;&#30340; Normal equations<a class="anchor-link" href="#&#20855;&#20633;&#27491;&#35215;&#21270;&#30340;-Normal-equations">&#182;</a></h2>$$
 \bigtriangledown_w MSE_{train} = 0 \\
-\bigtriangledown_w ((X^{(train)}w - y^{(train)})^T(X^{(train)}w - y^{(train)}) + \lambda w^Tw) = 0 \\
-\frac{\partial}{\partial w} (w^TX^{(train)T}X^{(train)}w - 2w^TX^{(train)T}y^{(train)} + y^{(train)T}y^{(train)} + \lambda w^Tw) = 0 \\
+\bigtriangledown_w \big((X^{(train)}w - y^{(train)})^T(X^{(train)}w - y^{(train)}) + \lambda w^Tw\big) = 0 \\
+\frac{\partial}{\partial w} \big(w^TX^{(train)T}X^{(train)}w - 2w^TX^{(train)T}y^{(train)} + y^{(train)T}y^{(train)} + \lambda w^Tw\big) = 0 \\
 2X^{(train)T}X^{(train)}w - 2X^{(train)T}y^{(train)} + 2\lambda w = 0 \\
 X^{(train)T}X^{(train)}w + \lambda w = X^{(train)T}y^{(train)} \\
 (X^{(train)T}X^{(train)} + \lambda I)w = X^{(train)T}y^{(train)} \\
