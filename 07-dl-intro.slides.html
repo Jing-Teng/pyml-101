@@ -13313,7 +13313,8 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#29992;&#24863;&#30693;&#22120;&#27169;&#25836;&#21934;&#20491;&#31070;&#32147;&#20803;">&#29992;&#24863;&#30693;&#22120;&#27169;&#25836;&#21934;&#20491;&#31070;&#32147;&#20803;<a class="anchor-link" href="#&#29992;&#24863;&#30693;&#22120;&#27169;&#25836;&#21934;&#20491;&#31070;&#32147;&#20803;">&#182;</a></h2>$$
-\hat{y} = \sigma(w^Tx + b)
+Z = Xw + b \\
+\hat{y} = \sigma(Z)
 $$
 </div>
 </div>
@@ -13337,19 +13338,29 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://i.imgur.com/VwyA17z.png?1" alt="Imgur"></p>
-<p>Source: <a href="https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba">https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba</a></p>
-
+<h2 id="&#36899;&#32080;&#22810;&#20491;&#24863;&#30693;&#22120;&#24314;&#27083;&#20986;&#31070;&#32147;&#32178;&#36335;">&#36899;&#32080;&#22810;&#20491;&#24863;&#30693;&#22120;&#24314;&#27083;&#20986;&#31070;&#32147;&#32178;&#36335;<a class="anchor-link" href="#&#36899;&#32080;&#22810;&#20491;&#24863;&#30693;&#22120;&#24314;&#27083;&#20986;&#31070;&#32147;&#32178;&#36335;">&#182;</a></h2>$$
+A^{[l-1]} = \sigma^{[l-1]}(Z^{[l-1]}) \\
+Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]}
+$$
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#36899;&#32080;&#22810;&#20491;&#24863;&#30693;&#22120;&#24314;&#27083;&#20986;&#22810;&#23652;&#24863;&#30693;&#22120;">&#36899;&#32080;&#22810;&#20491;&#24863;&#30693;&#22120;&#24314;&#27083;&#20986;&#22810;&#23652;&#24863;&#30693;&#22120;<a class="anchor-link" href="#&#36899;&#32080;&#22810;&#20491;&#24863;&#30693;&#22120;&#24314;&#27083;&#20986;&#22810;&#23652;&#24863;&#30693;&#22120;">&#182;</a></h2>$$
-A^{[l-1]} = \sigma^{[l-1]}(Z^{[l-1]}) \\
-Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]}
+<h2 id="&#31070;&#32147;&#32178;&#36335;&#29992;&#20358;&#34389;&#29702;&#36852;&#27512;&#21839;&#38988;&#30340;&#25104;&#26412;&#20989;&#25976;&#20134;&#28858;-MSE">&#31070;&#32147;&#32178;&#36335;&#29992;&#20358;&#34389;&#29702;&#36852;&#27512;&#21839;&#38988;&#30340;&#25104;&#26412;&#20989;&#25976;&#20134;&#28858; MSE<a class="anchor-link" href="#&#31070;&#32147;&#32178;&#36335;&#29992;&#20358;&#34389;&#29702;&#36852;&#27512;&#21839;&#38988;&#30340;&#25104;&#26412;&#20989;&#25976;&#20134;&#28858;-MSE">&#182;</a></h2>$$
+J(W, b) = \frac{1}{m}\sum_i(\hat{y_i} - y_i)^2 \\
+J(W, b) = \frac{1}{m}\big(L(\hat{y}, y)\big)
 $$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29992;&#31070;&#32147;&#32178;&#36335;&#30340;&#22806;&#35264;&#34920;&#31034;&#19968;&#20491;&#36852;&#27512;&#27169;&#22411;-$\hat{y}-=-Xw-+-b$">&#29992;&#31070;&#32147;&#32178;&#36335;&#30340;&#22806;&#35264;&#34920;&#31034;&#19968;&#20491;&#36852;&#27512;&#27169;&#22411; $\hat{y} = Xw + b$<a class="anchor-link" href="#&#29992;&#31070;&#32147;&#32178;&#36335;&#30340;&#22806;&#35264;&#34920;&#31034;&#19968;&#20491;&#36852;&#27512;&#27169;&#22411;-$\hat{y}-=-Xw-+-b$">&#182;</a></h2><p><img src="https://i.imgur.com/G9koF4C.png?1" alt="Imgur"></p>
+<p>Source: <a href="https://playground.tensorflow.org">https://playground.tensorflow.org</a></p>
+
 </div>
 </div>
 </div></section><section>
@@ -13360,6 +13371,15 @@ $$
 J(W, b) = -\frac{1}{m}\big(y\,log\,(\hat{y})+(1-y)(\,log\,(1-\hat{y})\big) \\
 J(W, b) = -\frac{1}{m}\big(L(\hat{y}, y)\big)
 $$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29992;&#31070;&#32147;&#32178;&#36335;&#30340;&#22806;&#35264;&#34920;&#31034;&#19968;&#20491;&#32645;&#21513;&#26031;&#22238;&#27512;&#27169;&#22411;-$\hat{y}-=-\sigma(Xw-+-b)$">&#29992;&#31070;&#32147;&#32178;&#36335;&#30340;&#22806;&#35264;&#34920;&#31034;&#19968;&#20491;&#32645;&#21513;&#26031;&#22238;&#27512;&#27169;&#22411; $\hat{y} = \sigma(Xw + b)$<a class="anchor-link" href="#&#29992;&#31070;&#32147;&#32178;&#36335;&#30340;&#22806;&#35264;&#34920;&#31034;&#19968;&#20491;&#32645;&#21513;&#26031;&#22238;&#27512;&#27169;&#22411;-$\hat{y}-=-\sigma(Xw-+-b)$">&#182;</a></h2><p><img src="https://i.imgur.com/lFjoLRm.png?1" alt="Imgur"></p>
+<p>Source: <a href="https://playground.tensorflow.org">https://playground.tensorflow.org</a></p>
+
 </div>
 </div>
 </div></section><section>
@@ -13383,16 +13403,16 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#21453;&#21521;&#20659;&#25773;&#65288;Backward-propagation&#65289;&#26159;&#21332;&#21161;&#26799;&#24230;&#36958;&#28187;&#26356;&#26377;&#25928;&#29575;&#34987;&#35336;&#31639;&#30340;&#28436;&#31639;&#26041;&#24335;">&#21453;&#21521;&#20659;&#25773;&#65288;Backward propagation&#65289;&#26159;&#21332;&#21161;&#26799;&#24230;&#36958;&#28187;&#26356;&#26377;&#25928;&#29575;&#34987;&#35336;&#31639;&#30340;&#28436;&#31639;&#26041;&#24335;<a class="anchor-link" href="#&#21453;&#21521;&#20659;&#25773;&#65288;Backward-propagation&#65289;&#26159;&#21332;&#21161;&#26799;&#24230;&#36958;&#28187;&#26356;&#26377;&#25928;&#29575;&#34987;&#35336;&#31639;&#30340;&#28436;&#31639;&#26041;&#24335;">&#182;</a></h2><p>如果沒有反向傳播，如下圖的神經網路結構，每次的迭代要同時計算共 100 個 $dW$ 與 $db$</p>
-$$(4 \times 2 + 1) + (6 \times 4 + 1) + (6 \times 6 + 1) + (4 \times 6 + 1) + (1 \times 4 + 1) = 100$$
+<h2 id="&#21453;&#21521;&#20659;&#25773;&#65288;Backward-propagation&#65289;&#26159;&#21332;&#21161;&#26799;&#24230;&#36958;&#28187;&#26356;&#26377;&#25928;&#29575;&#34987;&#35336;&#31639;&#30340;&#28436;&#31639;&#26041;&#24335;">&#21453;&#21521;&#20659;&#25773;&#65288;Backward propagation&#65289;&#26159;&#21332;&#21161;&#26799;&#24230;&#36958;&#28187;&#26356;&#26377;&#25928;&#29575;&#34987;&#35336;&#31639;&#30340;&#28436;&#31639;&#26041;&#24335;<a class="anchor-link" href="#&#21453;&#21521;&#20659;&#25773;&#65288;Backward-propagation&#65289;&#26159;&#21332;&#21161;&#26799;&#24230;&#36958;&#28187;&#26356;&#26377;&#25928;&#29575;&#34987;&#35336;&#31639;&#30340;&#28436;&#31639;&#26041;&#24335;">&#182;</a></h2><p>如果沒有反向傳播，如下圖的神經網路結構，每次的迭代要同時計算共 105 個 $dW$ 與 $db$</p>
+$$(4 \times 2 + 1) + (6 \times 4 + 1) + (6 \times 6 + 1) + (4 \times 6 + 1) + (2 \times 4 + 1) = 105$$
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://i.imgur.com/VwyA17z.png?1" alt="Imgur"></p>
-<p>Source: <a href="https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba">https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba</a></p>
+<p><img src="https://i.imgur.com/1Lt0b3G.png?1" alt="Imgur"></p>
+<p>Source: <a href="https://playground.tensorflow.org">https://playground.tensorflow.org</a></p>
 
 </div>
 </div>
