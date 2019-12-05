@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +36,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13069,45 +13068,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13263,6 +13223,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#22823;&#32177;">&#22823;&#32177;<a class="anchor-link" href="#&#22823;&#32177;">&#182;</a></h2><ul>
 <li>機器學習簡介</li>
+<li>端到端的機器學習（資料科學）專案</li>
 <li>常見學習途徑</li>
 </ul>
 
@@ -13344,6 +13305,17 @@ a.anchor-link {
 <li>結構式學習（Structured Learning）</li>
 <li>強化式學習（Reinforcement Learning）</li>
 <li>未知的</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Scikit-Learn-&#25033;&#29992;&#22580;&#26223;&#28858;">Scikit-Learn &#25033;&#29992;&#22580;&#26223;&#28858;<a class="anchor-link" href="#Scikit-Learn-&#25033;&#29992;&#22580;&#26223;&#28858;">&#182;</a></h2><ul>
+<li>監督式學習（Supervised Learning）</li>
+<li>非監督式學習（Unsupervised Learning）</li>
 </ul>
 
 </div>
@@ -13527,7 +13499,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#38928;&#28204;&#25976;&#20540;&#65306;&#20998;&#39006;&#21839;&#38988;&#65288;Classification&#65289;">&#38928;&#28204;&#25976;&#20540;&#65306;&#20998;&#39006;&#21839;&#38988;&#65288;Classification&#65289;<a class="anchor-link" href="#&#38928;&#28204;&#25976;&#20540;&#65306;&#20998;&#39006;&#21839;&#38988;&#65288;Classification&#65289;">&#182;</a></h2><p>從球員的場均得分預測前場或後場</p>
+<h2 id="&#38928;&#28204;&#39006;&#21029;&#65306;&#20998;&#39006;&#21839;&#38988;&#65288;Classification&#65289;">&#38928;&#28204;&#39006;&#21029;&#65306;&#20998;&#39006;&#21839;&#38988;&#65288;Classification&#65289;<a class="anchor-link" href="#&#38928;&#28204;&#39006;&#21029;&#65306;&#20998;&#39006;&#21839;&#38988;&#65288;Classification&#65289;">&#182;</a></h2><p>從球員的場均得分預測前場或後場</p>
 
 </div>
 </div>
@@ -13687,350 +13659,11 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#23565;&#36039;&#26009;&#36914;&#34892;&#36028;&#27161;&#65288;data-labeling&#65289;&#33457;&#36027;&#26178;&#38291;&#33287;&#25104;&#26412;&#65292;&#21487;&#20197;&#21033;&#29992;&#20841;&#31278;&#23416;&#32722;&#26041;&#24335;&#35036;&#24375;">&#23565;&#36039;&#26009;&#36914;&#34892;&#36028;&#27161;&#65288;data labeling&#65289;&#33457;&#36027;&#26178;&#38291;&#33287;&#25104;&#26412;&#65292;&#21487;&#20197;&#21033;&#29992;&#20841;&#31278;&#23416;&#32722;&#26041;&#24335;&#35036;&#24375;<a class="anchor-link" href="#&#23565;&#36039;&#26009;&#36914;&#34892;&#36028;&#27161;&#65288;data-labeling&#65289;&#33457;&#36027;&#26178;&#38291;&#33287;&#25104;&#26412;&#65292;&#21487;&#20197;&#21033;&#29992;&#20841;&#31278;&#23416;&#32722;&#26041;&#24335;&#35036;&#24375;">&#182;</a></h2><ul>
-<li>半監督式學習（Semi-supervised Learning）</li>
-<li>遷移學習（Transfer Learning）</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#21322;&#30435;&#30563;&#24335;&#23416;&#32722;&#65288;Semi-supervised-Learning&#65289;">&#21322;&#30435;&#30563;&#24335;&#23416;&#32722;&#65288;Semi-supervised Learning&#65289;<a class="anchor-link" href="#&#21322;&#30435;&#30563;&#24335;&#23416;&#32722;&#65288;Semi-supervised-Learning&#65289;">&#182;</a></h2><p>使用標籤資料（labelled data）與無標籤資料（unlabelled data）訓練模型，再對無標籤資料（unlabelled data）預測</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classification_df_train</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>player</th>
-      <th>ppg</th>
-      <th>pos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Stephen Curry</td>
-      <td>23.5</td>
-      <td>G</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Chris Paul</td>
-      <td>18.5</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>LeBron James</td>
-      <td>27.2</td>
-      <td>F</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Blake Griffin</td>
-      <td>21.9</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classification_df_test</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>player</th>
-      <th>ppg</th>
-      <th>pos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4</th>
-      <td>Russell Westbrook</td>
-      <td>23.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Paul George</td>
-      <td>19.8</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#36983;&#31227;&#23416;&#32722;&#65288;Transfer-Learning&#65289;">&#36983;&#31227;&#23416;&#32722;&#65288;Transfer Learning&#65289;<a class="anchor-link" href="#&#36983;&#31227;&#23416;&#32722;&#65288;Transfer-Learning&#65289;">&#182;</a></h2><p>使用標籤資料（labelled data）、無標籤資料（unlabelled data）或者風馬牛不相及的資料（unrelated data）訓練模型，再對無標籤資料（unlabelled data）預測</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classification_df_train</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>player</th>
-      <th>height</th>
-      <th>pos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Stephen Curry</td>
-      <td>191</td>
-      <td>G</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Chris Paul</td>
-      <td>183</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>LeBron James</td>
-      <td>203</td>
-      <td>F</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Blake Griffin</td>
-      <td>208</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Roger Federer</td>
-      <td>185</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Rafael Nadal</td>
-      <td>185</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classification_df_test</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>player</th>
-      <th>height</th>
-      <th>pos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>6</th>
-      <td>Russell Westbrook</td>
-      <td>190</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Paul George</td>
-      <td>206</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#38750;&#30435;&#30563;&#24335;&#23416;&#32722;&#65288;Unsupervised-Learning&#65289;">&#38750;&#30435;&#30563;&#24335;&#23416;&#32722;&#65288;Unsupervised Learning&#65289;<a class="anchor-link" href="#&#38750;&#30435;&#30563;&#24335;&#23416;&#32722;&#65288;Unsupervised-Learning&#65289;">&#182;</a></h2><p>使用無標籤資料（unlabelled data）訓練模型，再對無標籤資料（unlabelled data）預測</p>
+<ul>
+<li>降維（Dimensionality reduction）</li>
+<li>聚類（Clustering）</li>
+</ul>
 
 </div>
 </div>
@@ -14178,13 +13811,19 @@ a.anchor-link {
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#31471;&#21040;&#31471;&#30340;&#27231;&#22120;&#23416;&#32722;&#65288;&#36039;&#26009;&#31185;&#23416;&#65289;&#23560;&#26696;">&#31471;&#21040;&#31471;&#30340;&#27231;&#22120;&#23416;&#32722;&#65288;&#36039;&#26009;&#31185;&#23416;&#65289;&#23560;&#26696;<a class="anchor-link" href="#&#31471;&#21040;&#31471;&#30340;&#27231;&#22120;&#23416;&#32722;&#65288;&#36039;&#26009;&#31185;&#23416;&#65289;&#23560;&#26696;">&#182;</a></h2>
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#32080;&#27083;&#24335;&#23416;&#32722;&#65288;Structured-Learning&#65289;">&#32080;&#27083;&#24335;&#23416;&#32722;&#65288;Structured Learning&#65289;<a class="anchor-link" href="#&#32080;&#27083;&#24335;&#23416;&#32722;&#65288;Structured-Learning&#65289;">&#182;</a></h2><p>訓練後的模型不再只是輸出「標籤」或「數值」，而是複雜的物件，例如 Google 翻譯、物件辨識或人臉辨識</p>
-<p><img src="https://i.imgur.com/9174nib.jpg" alt="Imgur"></p>
-<p>Source: <a href="mailto:https://medium.com/@chris.walder/a-giant-thank-you-to-the-2019-nba-champion-toronto-raptors-291bb966ec45">https://medium.com/@chris.walder/a-giant-thank-you-to-the-2019-nba-champion-toronto-raptors-291bb966ec45</a></p>
+<h2 id="&#31471;&#21040;&#31471;&#65288;End-to-end&#65289;&#23560;&#26696;&#31034;&#24847;&#22294;">&#31471;&#21040;&#31471;&#65288;End-to-end&#65289;&#23560;&#26696;&#31034;&#24847;&#22294;<a class="anchor-link" href="#&#31471;&#21040;&#31471;&#65288;End-to-end&#65289;&#23560;&#26696;&#31034;&#24847;&#22294;">&#182;</a></h2><p><img src="https://i.imgur.com/CCvk39z.png" alt="Imgur"></p>
+<p>Source: <a href="https://r4ds.had.co.nz/">R for Data Science</a></p>
 
 </div>
 </div>
@@ -14192,7 +13831,13 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#24375;&#21270;&#24335;&#23416;&#32722;&#65288;Reinforcement-Learning&#65289;">&#24375;&#21270;&#24335;&#23416;&#32722;&#65288;Reinforcement Learning&#65289;<a class="anchor-link" href="#&#24375;&#21270;&#24335;&#23416;&#32722;&#65288;Reinforcement-Learning&#65289;">&#182;</a></h2><p>不使用資料訓練模型，讓模型從「評價」自行訓練，是「不得不」採取的訓練方法，因為無從提供起</p>
+<h2 id="&#31471;&#21040;&#31471;&#65288;End-to-end&#65289;">&#31471;&#21040;&#31471;&#65288;End-to-end&#65289;<a class="anchor-link" href="#&#31471;&#21040;&#31471;&#65288;End-to-end&#65289;">&#182;</a></h2><ul>
+<li>獲取資料（Import）</li>
+<li>掌握資料（Tidy、Transform）</li>
+<li>探索資料（Visualise）</li>
+<li>機器學習（Model）</li>
+<li>溝通資料（Communicate）</li>
+</ul>
 
 </div>
 </div>
