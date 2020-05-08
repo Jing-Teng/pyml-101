@@ -4,7 +4,9 @@
 
 這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在[台灣大學資訊工程學系資訊系統訓練班](https://www.csie.ntu.edu.tw/train/)所開設的 Python 機器學習課程網頁，課程時數 30 小時。
 
-Contact me: <tony@kyosei.ai>
+Contact me: <tonykuoyj@gmail.com>
+
+<!--
 
 ### 評分標準
 
@@ -24,15 +26,19 @@ Contact me: <tony@kyosei.ai>
 
 <https://www.facebook.com/groups/ntucsietrainpyds/>
 
+--->
+
 ### 課程共筆
 
+- [328 期假日下午班]()
 - [317 期暑期密集班](https://colab.research.google.com/drive/100aS0WO9VMXXBa7v_-n2chK56YaARE3K)
 - [318 期假日下午班](https://colab.research.google.com/drive/16jLjtaPbQN8xKrg3HEb2o8wxGBhsoYRG)
 
 ### 課程大綱
 
-- [關於](00-about.slides.html)
 - [起步走](01-getting-started.slides.html)
+- [NumPy 101](02-essential-numpy-for-ml.slides.html)
+- [Matplotlib 101](03-essential-matplotlib-for-ml.slides.html)
 - [機器學習簡介](02-intro.slides.html)
 - [Scikit-Learn 101](03-sklearn-101.slides.html)
 - [迴歸](04-regression.slides.html)
@@ -43,5 +49,6 @@ Contact me: <tony@kyosei.ai>
 
 ### 近期課程錄影清單
 
-- [第 317 期 Python 機器學習（暑期密集班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWkWOTr0HsKt8ACbck6HnI0)
-- [第 318 期 Python 機器學習（假日班下午）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUbjWcKQOKhho7CpxkvaMVu)
+- [328 期假日下午班]()
+- [317 期暑期密集班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWkWOTr0HsKt8ACbck6HnI0)
+- [318 期假日下午班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUbjWcKQOKhho7CpxkvaMVu)
