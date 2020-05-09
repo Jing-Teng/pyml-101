@@ -53,6 +53,6 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 近期課程錄影清單
 
-- [328 期假日下午班]()
+- [328 期假日下午班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWpk-95u2On2uF1BSxrDOzi)
 - [317 期暑期密集班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWkWOTr0HsKt8ACbck6HnI0)
 - [318 期假日下午班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUbjWcKQOKhho7CpxkvaMVu)
