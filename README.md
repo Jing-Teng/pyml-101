@@ -47,6 +47,10 @@ Contact me: <tonykuoyj@gmail.com>
 - [深度學習簡介](07-dl-intro.slides.html)
 - [神經網路模型](08-nn.slides.html)
 
+如何將課程投影片轉換成 .pdf 格式？
+- 在 URL 最後面加上 `?print-pdf`
+- 使用 Chrome 瀏覽器列印，另存成 pdf 格式
+
 ### 近期課程錄影清單
 
 - [328 期假日下午班]()
