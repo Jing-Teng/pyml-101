@@ -6,6 +6,10 @@
 
 Contact me: <tonykuoyj@gmail.com>
 
+### 課程互動頻道
+
+<https://www.sli.do> #42005
+
 <!--
 
 ### 評分標準
@@ -18,10 +22,6 @@ Contact me: <tonykuoyj@gmail.com>
 - [317 期暑期密集班](https://forms.gle/ZVfVRTdwN7wFNUGm8)
 - [318 期假日下午班](https://forms.gle/TfqassRizDnH2mCG9)
 
-### 課程互動頻道
-
-<https://www.sli.do>
-
 ### 課程 Facebook 群組
 
 <https://www.facebook.com/groups/ntucsietrainpyds/>
@@ -30,7 +30,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 課程共筆
 
-- [328 期假日下午班]()
+- [328 期假日下午班](https://colab.research.google.com/drive/17fii27SLcX9U5YJ-oRAxDMn3jokW4lN_?usp=sharing)
 - [317 期暑期密集班](https://colab.research.google.com/drive/100aS0WO9VMXXBa7v_-n2chK56YaARE3K)
 - [318 期假日下午班](https://colab.research.google.com/drive/16jLjtaPbQN8xKrg3HEb2o8wxGBhsoYRG)
 
