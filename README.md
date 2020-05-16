@@ -41,7 +41,7 @@ Contact me: <tonykuoyj@gmail.com>
 - [Matplotlib 101](03-essential-matplotlib-for-ml.slides.html)
 - [機器學習簡介](04-ml-intro.slides.html)
 - [Scikit-Learn 101](05-sklearn-101.slides.html)
-- [迴歸](04-regression.slides.html)
+- [迴歸](06-regression-101.slides.html)
 - [梯度遞減](05-gradient-descent.slides.html)
 - [分類](06-classification.slides.html)
 - [深度學習簡介](07-dl-intro.slides.html)
