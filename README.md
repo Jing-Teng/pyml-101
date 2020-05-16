@@ -39,7 +39,7 @@ Contact me: <tonykuoyj@gmail.com>
 - [起步走](01-getting-started.slides.html)
 - [NumPy 101](02-essential-numpy-for-ml.slides.html)
 - [Matplotlib 101](03-essential-matplotlib-for-ml.slides.html)
-- [機器學習簡介](02-intro.slides.html)
+- [機器學習簡介](04-ml-intro.slides.html)
 - [Scikit-Learn 101](03-sklearn-101.slides.html)
 - [迴歸](04-regression.slides.html)
 - [梯度遞減](05-gradient-descent.slides.html)
