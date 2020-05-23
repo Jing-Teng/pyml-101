@@ -6,6 +6,11 @@
 
 Contact me: <tonykuoyj@gmail.com>
 
+###  WIFI: CSIE_guest
+
+- User ID: guest_Y3GSX
+- Password: 3SM73U1T
+
 ### 課程互動頻道
 
 <https://www.sli.do> #42005
