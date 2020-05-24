@@ -47,7 +47,7 @@ Contact me: <tonykuoyj@gmail.com>
 - [機器學習簡介](04-ml-intro.slides.html)
 - [Scikit-Learn 101](05-sklearn-101.slides.html)
 - [迴歸](06-regression-101.slides.html)
-- [梯度遞減](05-gradient-descent.slides.html)
+- [梯度遞減](07-gradient-descent.slides.html)
 - [分類](06-classification.slides.html)
 - [深度學習簡介](07-dl-intro.slides.html)
 - [神經網路模型](08-nn.slides.html)
