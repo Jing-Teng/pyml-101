@@ -14521,6 +14521,7 @@ $$
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span>
 
+<span class="n">X</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">poly</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">X_poly</span> <span class="o">=</span> <span class="n">poly</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">X_poly</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
@@ -14540,16 +14541,16 @@ $$
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[1.     1.     2.11   1.     2.11   4.4521]
- [1.     1.     2.06   1.     2.06   4.2436]
- [1.     1.     2.11   1.     2.11   4.4521]
- [1.     1.     2.08   1.     2.08   4.3264]
- [1.     1.     1.96   1.     1.96   3.8416]
- [1.     1.     1.93   1.     1.93   3.7249]
- [1.     1.     2.11   1.     2.11   4.4521]
- [1.     1.     1.85   1.     1.85   3.4225]
- [1.     1.     2.03   1.     2.03   4.1209]
- [1.     1.     2.06   1.     2.06   4.2436]]
+<pre>[[1.     2.11   4.4521]
+ [1.     2.06   4.2436]
+ [1.     2.11   4.4521]
+ [1.     2.08   4.3264]
+ [1.     1.96   3.8416]
+ [1.     1.93   3.7249]
+ [1.     2.11   4.4521]
+ [1.     1.85   3.4225]
+ [1.     2.03   4.1209]
+ [1.     2.06   4.2436]]
 </pre>
 </div>
 </div>
