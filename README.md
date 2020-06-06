@@ -49,8 +49,7 @@ Contact me: <tonykuoyj@gmail.com>
 - [迴歸](06-regression-101.slides.html)
 - [梯度遞減](07-gradient-descent.slides.html)
 - [分類](08-classification-101.slides.html)
-- [深度學習簡介](07-dl-intro.slides.html)
-- [神經網路模型](08-nn.slides.html)
+- [深度學習簡介](09-dl-intro.slides.html)
 
 如何將課程投影片轉換成 .pdf 格式？
 - 在 URL 最後面加上 `?print-pdf`
